@@ -1,0 +1,29 @@
+{
+  "name": "digitized-card-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node ./src",
+    "build": "babel ./src --out-dir build --copy-files",
+    "start": "npm run build && node build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "express": "^4.16.4",
+    "joi": "^17.3.0",
+    "mongoose": "^5.9.19",
+    "mongoose-delete": "^0.4.0",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.2",
+    "@babel/node": "^7.14.2",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/runtime-corejs3": "^7.14.0"
+  }
+}
